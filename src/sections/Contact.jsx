@@ -7,6 +7,8 @@ import ContactExperience from "../components/models/contact/ContactExperience";
 const Contact = () => {
   const formRef = useRef(null);
   const [loading, setLoading] = useState(false);
+  const [error, setError] = useState("");
+  const [success, setSuccess] = useState("");
   const [form, setForm] = useState({
     name: "",
     email: "",
@@ -21,6 +23,8 @@ const Contact = () => {
   const handleSubmit = async (e) => {
     e.preventDefault();
     setLoading(true); // Show loading state
+    setError("");
+    setSuccess("");
 
     try {
       await emailjs.sendForm(
@@ -32,8 +36,10 @@ const Contact = () => {
 
       // Reset form and stop loading
       setForm({ name: "", email: "", message: "" });
+      setSuccess("Message Sended, Thank a lot!!!");
     } catch (error) {
       console.error("EmailJS Error:", error); // Optional: show toast
+      setError("Error");
     } finally {
       setLoading(false); // Always stop loading, even on error
     }
@@ -42,18 +48,11 @@ const Contact = () => {
   return (
     <section id="contact" className="flex-center section-padding">
       <div className="w-full h-full md:px-10 px-5">
-        <TitleHeader
-          title="Get in Touch – Let’s Connect"
-          sub="💬 Have questions or ideas? Let’s talk! 🚀"
-        />
+        <TitleHeader title="Get in Touch – Let’s Connect" sub="💬 Have questions or ideas? Let’s talk! 🚀" />
         <div className="grid-12-cols mt-16">
           <div className="xl:col-span-5">
             <div className="flex-center card-border rounded-xl p-10">
-              <form
-                ref={formRef}
-                onSubmit={handleSubmit}
-                className="w-full flex flex-col gap-7"
-              >
+              <form ref={formRef} onSubmit={handleSubmit} className="w-full flex flex-col gap-7">
                 <div>
                   <label htmlFor="name">Your name</label>
                   <input
@@ -96,14 +95,14 @@ const Contact = () => {
                 <button type="submit">
                   <div className="cta-button group">
                     <div className="bg-circle" />
-                    <p className="text">
-                      {loading ? "Sending..." : "Send Message"}
-                    </p>
+                    <p className="text">{loading ? "Sending..." : "Send Message"}</p>
                     <div className="arrow-wrapper">
                       <img src="/images/arrow-down.svg" alt="arrow" />
                     </div>
                   </div>
                 </button>
+                {error && <p className="text-red-500">{error}</p>}
+                {success && <p className="text-green-500">{success}</p>}
               </form>
             </div>
           </div>
