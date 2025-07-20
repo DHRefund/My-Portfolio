@@ -44,7 +44,7 @@ const AppShowcase = () => {
       <div className="w-full">
         <h2 className=" font-bold mb-10 uppercase tracking-wider hero-text text-center ">Practice Project</h2>
         <div className="showcaselayout">
-          <div ref={rydeRef} className="first-project-wrapper">
+          <a href="https://amazone-nextjs15.vercel.app" ref={rydeRef} className="first-project-wrapper" target="_blank">
             <div className="image-wrapper">
               <img src="/new/amazon1.png" alt="Next Amazon" />
             </div>
@@ -55,22 +55,34 @@ const AppShowcase = () => {
                 more.
               </p>
             </div>
-          </div>
+          </a>
 
           <div className="project-list-wrapper overflow-hidden">
-            <div className="project" ref={libraryRef}>
+            <a
+              className="project"
+              ref={libraryRef}
+              href="https://cocktail-with-gsap.vercel.app"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
               <div className="image-wrapper bg-[#FFEFDB]">
                 <img src="/new/cocktail1.png" alt="Cocktail" />
               </div>
               <h2>Landing page for cocktail club </h2>
-            </div>
+            </a>
 
-            <div className="project" ref={ycDirectoryRef}>
+            <a
+              href="https://filmreactdemonhunter.vercel.app"
+              className="project cursor-pointer"
+              ref={ycDirectoryRef}
+              target="_blank"
+              rel="noopener noreferrer"
+            >
               <div className="image-wrapper bg-[#FFE7EB]">
                 <img src="/new/film1.png" alt="Infinity magic scroll" />
               </div>
-              <h2>Search your favorite film App - Infinity magic scroll with TMDB </h2>
-            </div>
+              <h2>Search your favorite film App - Infinity magic scroll with TMDB</h2>
+            </a>
           </div>
         </div>
       </div>
