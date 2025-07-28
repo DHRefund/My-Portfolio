@@ -40,7 +40,7 @@ const AppShowcase = () => {
   }, []);
 
   return (
-    <div id="work" ref={sectionRef} className="app-showcase mt-20 ">
+    <div id="practice" ref={sectionRef} className="app-showcase mt-20 ">
       <div className="w-full">
         <h2 className=" font-bold mb-10 uppercase tracking-wider hero-text text-center ">Practice Project</h2>
         <div className="showcaselayout">

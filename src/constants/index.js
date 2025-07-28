@@ -1,19 +1,15 @@
 const navLinks = [
   {
-    name: "Work",
-    link: "#work",
+    name: "Summary",
+    link: "#summary",
   },
   {
     name: "Experience",
     link: "#experience",
   },
   {
-    name: "Skills",
-    link: "#skills",
-  },
-  {
-    name: "Testimonials",
-    link: "#testimonials",
+    name: "Practice",
+    link: "#practice",
   },
 ];
 
@@ -184,24 +180,26 @@ const techStackIcons = [
 const expCards = [
   {
     review:
-      "In the new team, I got to work on a Product project and learned a lot, such as how to analyze business requirements, design microservices system architecture, optimize database performance, and implement automated CI/CD for the product.",
-    imgPath: "/images/exp1.png",
+      "In new team, I joined a project built from scratch and had the opportunity to learn a lot, such as how to analyze business requirements, design system architecture, optimize database performance, and implement automated CI/CD for the product.",
+    // imgPath: "/images/exp1.png",
     logoPath: "/images/logo1.png",
     title: "DeK Technologies – Full Stack Developer",
-    date: "April 2024 - Present",
+    date: "01/2024 - Present",
+    project: " CarCare – Car Maintenance Management Application ( 7 members)",
     responsibilities: [
       "Designed UX/UI and implement additional functionalities (both back-end and front-end) based on the requirements of stackehoders.",
-      "Designed and implemented APIs: Developed REST APIs with microservices architecture, integrating RabbitMQ for asynchronous message processing and ensuring system stability.",
-      "Collabrate with the team leader to define and improve the team’s workflow, which decreases 40% of the time to deploy new functionality.",
+      "Reviewing code from other members of team to ensure quality. Refactor, write unit tests and documentation to help help onboard developers faster and easier.",
+      "collaborate  with the team leader to define and improve the team’s workflow, which decreases 40% of the time to deploy new functionality.",
     ],
   },
   {
     review:
       "Here, I've experienced several outsourcing projects and learned a lot, such as how to flexibly manage projects according to client requirements, optimize workflows to ensure efficiency and quality, and problem-solving skills under high pressure while collaborating with stakeholders across multiple time zones.",
-    imgPath: "/images/exp2.png",
+    // imgPath: "/images/exp2.png",
     logoPath: "/images/logo2.png",
     title: "DeK Technologies – Full Stack Developer",
-    date: "June 2022 - April 2024",
+    date: "  06/2022 - 12/2023",
+    project: " 4+ projects (Local Food Order, Event ticket sale, School Management System) (12 members)",
     responsibilities: [
       "Haved chance to define the architecture and coding convention, set up CI/CD system for whole front-end and back-end in some projects.",
       "Designed UX/UI, Develope features according to requirements and wrote unit/integration tests to ensure functionality and maintainability.",
@@ -212,14 +210,15 @@ const expCards = [
   {
     review:
       "Thanks to this project, which was my first real-world project after graduation, I gained a clear understanding of the actual workflow, from requirement gathering, professional team collaboration, and efficient source code management, to the testing and product deployment process—something I hadn't deeply experienced in an academic setting.",
-    imgPath: "/images/exp3.png",
+    // imgPath: "/images/exp3.png",
     logoPath: "/images/logo3.png",
     title: "BookingCare Technology –  Full Stack Developer",
-    date: "August 2021 - May 2022",
+    date: "05/2021 - 06/2022",
+    project: " Booking Care (6 members) is an online medical appointment booking application",
     responsibilities: [
       "Build features and improvements based on the roadmap.",
       "Reviewing code for other team members to ensure code quality and maintainability.",
-      "Write unit tests and documentation to help onboard developers faster and easier.",
+      "Write unit tests, document. Fix bugs and maintain legacy system to run smoothly.",
     ],
   },
 ];
