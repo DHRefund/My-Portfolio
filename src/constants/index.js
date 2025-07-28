@@ -189,7 +189,7 @@ const expCards = [
     responsibilities: [
       "Designed UX/UI and implement additional functionalities (both back-end and front-end) based on the requirements of stackehoders.",
       "Reviewing code from other members of team to ensure quality. Refactor, write unit tests and documentation to help help onboard developers faster and easier.",
-      "collaborate  with the team leader to define and improve the team’s workflow, which decreases 40% of the time to deploy new functionality.",
+      "collaborate  with the team leader to define and improve the team’s workflow, which decreases time to deploy new functionality.",
     ],
   },
   {
@@ -199,7 +199,7 @@ const expCards = [
     logoPath: "/images/logo2.png",
     title: "DeK Technologies – Full Stack Developer",
     date: "  06/2022 - 12/2023",
-    project: " 4+ projects (Local Food Order, Event ticket sale, School Management System) (12 members)",
+    project: " 3+ projects (Local Food Order, Event ticket sale, School Management System) (12 members)",
     responsibilities: [
       "Haved chance to define the architecture and coding convention, set up CI/CD system for whole front-end and back-end in some projects.",
       "Designed UX/UI, Develope features according to requirements and wrote unit/integration tests to ensure functionality and maintainability.",
