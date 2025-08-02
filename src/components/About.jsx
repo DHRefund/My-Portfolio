@@ -49,7 +49,6 @@ const About = () => {
               <li>ReactJS, NextJS, ExpressJS, NestJS</li>
               <li>Vite, Webpack/Babel</li>
               <li>TailwindCSS, Shadcn, Material-UI, GSAP</li>
-              <li>PostgreSQL, MySQL</li>
             </ul>
           </li>
           <li>
