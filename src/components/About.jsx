@@ -41,12 +41,12 @@ const About = () => {
         <h2 className="hero-text font-bold mb-4 mt-4 uppercase tracking-wider text-center ">Technical Skills</h2>
         <ul className="mb-4 list-disc list-inside space-y-2 text-white-50 md:text-xl px-20 ">
           <li>
-            <b>Programming Languages:</b> JavaScript &amp; TypeScript
+            <b>Programming Languages:</b> JavaScript &amp; TypeScript, Java
           </li>
           <li>
             <b>Frameworks/Platforms:</b>
             <ul className="list-disc list-inside ml-6">
-              <li>ReactJS, NextJS, ExpressJS, NestJS</li>
+              <li>ReactJS, NextJS, ExpressJS, NestJS, Spring Boot</li>
               <li>Vite, Webpack/Babel</li>
               <li>TailwindCSS, Shadcn, Material-UI, GSAP</li>
             </ul>
@@ -64,9 +64,11 @@ const About = () => {
                 Understanding of OOP methodologies, SOLID principles, design patterns, DDD (Domain-Driven Design), and
                 Clean Architecture.
               </li>
-              <li>Knowledge of Cloud Computing Platforms: AWS</li>
+              <li>
+                Knowledge of Cloud Computing Platforms: AWS(EC2, Amplify, S3,...), Appwrite, Firebase, Cloudinary,
+                Clerk, ...
+              </li>
               <li>Experience in setting up CI/CD pipelines, using Docker, and implementing DevOps best practices</li>
-              <li>Familiarity with using Cloud Services: Appwrite, Firebase, Cloudinary, Clerk, ...</li>
             </ul>
           </li>
         </ul>
