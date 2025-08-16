@@ -184,7 +184,7 @@ const expCards = [
     // imgPath: "/images/exp1.png",
     logoPath: "/images/logo1.png",
     title: "DeK Technologies – Full Stack Developer",
-    date: "01/2024 - Present",
+    date: "07/2024 - Present",
     project: " CarCare – Car Maintenance Management Application ( 7 members)",
     responsibilities: [
       "Designed UX/UI and implement additional functionalities (both back-end and front-end) based on the requirements of stackehoders.",
@@ -198,7 +198,7 @@ const expCards = [
     // imgPath: "/images/exp2.png",
     logoPath: "/images/logo2.png",
     title: "DeK Technologies – Full Stack Developer",
-    date: "  06/2022 - 12/2023",
+    date: "  06/2022 - 06/2024",
     project: " 3+ projects (Local Food Order, Event ticket sale, School Management System) (12 members)",
     responsibilities: [
       "Haved chance to define the architecture and coding convention, set up CI/CD system for whole front-end and back-end in some projects.",
