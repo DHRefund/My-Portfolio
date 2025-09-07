@@ -49,6 +49,7 @@ const About = () => {
               <li>ReactJS, NextJS, ExpressJS, NestJS, Spring Boot</li>
               <li>Vite, Webpack/Babel</li>
               <li>TailwindCSS, Shadcn, Material-UI, GSAP</li>
+              <li>Figma, Adobe Photoshop, Adobe Premiere</li>
             </ul>
           </li>
           <li>
@@ -65,10 +66,10 @@ const About = () => {
                 Clean Architecture.
               </li>
               <li>
-                Knowledge of Cloud Computing Platforms: AWS(EC2, Amplify, S3,...), Appwrite, Firebase, Cloudinary,
-                Clerk, ...
+                Knowledge of Cloud Computing Platforms: AWS(EC2,Elastic Beanstalk, Amplify, S3+CloudFront,...),
+                Appwrite, Firebase, Cloudinary, Clerk, ...
               </li>
-              <li>Experience in setting up CI/CD pipelines, using Docker, and implementing DevOps best practices</li>
+              <li>Experience in setting up CI/CD pipelines, using Docker</li>
             </ul>
           </li>
         </ul>

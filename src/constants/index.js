@@ -188,8 +188,8 @@ const expCards = [
     project: " CarCare – Car Maintenance Management Application ( 7 members)",
     responsibilities: [
       "Designed UX/UI and implement additional functionalities (both back-end and front-end) based on the requirements of stackehoders.",
-      "Reviewing code from other members of team to ensure quality. Refactor, write unit tests and documentation to help help onboard developers faster and easier.",
-      "collaborate  with the team leader to define and improve the team’s workflow, which decreases time to deploy new functionality.",
+      "Reviewing code from other members of team to ensure quality. Refactor, write unit tests and documentation to help onboard developers faster and easier.",
+      "Collaborate  with the team leader to define and improve the team’s workflow, which decreases time to deploy new functionality.",
     ],
   },
   {
