@@ -185,6 +185,7 @@ const expCards = [
     logoPath: "/images/logo1.png",
     title: "DeK Technologies – Full Stack Developer",
     date: "07/2024 - Present",
+    techstack: "ReactJS, NestJS, PostgreSQL, TypeScript, RabbitMQ",
     project: " CarCare – Car Maintenance Management Application ( 7 members)",
     responsibilities: [
       "Designed UX/UI and implement additional functionalities (both back-end and front-end) based on the requirements of stackehoders.",
@@ -199,6 +200,7 @@ const expCards = [
     logoPath: "/images/logo2.png",
     title: "DeK Technologies – Full Stack Developer",
     date: "  06/2022 - 06/2024",
+    techstack: "ReactJS, ExpressJS, NestJS, PostgreSQL, TypeScript",
     project: " 3+ projects (Local Food Order, Event ticket sale, School Management System) (12 members)",
     responsibilities: [
       "Haved chance to define the architecture and coding convention, set up CI/CD system for whole front-end and back-end in some projects.",
@@ -214,6 +216,7 @@ const expCards = [
     logoPath: "/images/logo3.png",
     title: "BookingCare Technology –  Full Stack Developer",
     date: "05/2021 - 06/2022",
+    techstack: "ReactJS, ExpressJS, PostgreSQL, TypeScript",
     project: " Booking Care (6 members) is an online medical appointment booking application",
     responsibilities: [
       "Build features and improvements based on the roadmap.",
