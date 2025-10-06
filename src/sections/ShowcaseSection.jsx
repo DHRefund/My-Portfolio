@@ -72,16 +72,16 @@ const AppShowcase = () => {
             </a>
 
             <a
-              href="https://filmreactdemonhunter.vercel.app"
+              href="https://carepulse-two-omega.vercel.app"
               className="project cursor-pointer"
               ref={ycDirectoryRef}
               target="_blank"
               rel="noopener noreferrer"
             >
               <div className="image-wrapper bg-[#FFE7EB]">
-                <img src="/new/film1.png" alt="Infinity magic scroll" />
+                <img src="/images/booking.png" alt="Booking app" />
               </div>
-              <h2>Search your favorite film App - Infinity magic scroll with TMDB</h2>
+              <h2>Booking app with Nextjs, React Hook Form and Tanstack Table </h2>
             </a>
           </div>
         </div>
