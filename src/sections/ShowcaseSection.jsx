@@ -51,7 +51,7 @@ const AppShowcase = () => {
             <div className="text-content">
               <h2>The next generation of the Amazon app with NextJs 15 for fullstack</h2>
               <p className="text-white-50 md:text-xl">
-                TeachStack: NextJs 15, Tailwind CSS, shadCn UI, TypeScript, AuthJs , Recharts, MongoDB, Zustand, and
+                TechStack: NextJs 15, Tailwind CSS, shadCn UI, TypeScript, AuthJs , Recharts, MongoDB, Zustand, and
                 more.
               </p>
             </div>
