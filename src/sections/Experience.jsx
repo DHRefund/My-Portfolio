@@ -10,51 +10,43 @@ gsap.registerPlugin(ScrollTrigger);
 
 const Experience = () => {
   useGSAP(() => {
-    // Loop through each timeline card and animate them in
-    // as the user scrolls to each card
+    // 各タイムラインカードをループし、ユーザーがスクロールする際に
+    // アニメーションで表示させる
     gsap.utils.toArray(".timeline-card").forEach((card) => {
-      // Animate the card coming in from the left
-      // and fade in
+      // カードを左からスライドインさせ、フェードインさせる
       gsap.from(card, {
-        // Move the card in from the left
+        // 左側から移動
         xPercent: -100,
-        // Make the card invisible at the start
+        // 開始時は透明
         opacity: 0,
-        // Set the origin of the animation to the left side of the card
+        // アニメーションの起点をカードの左側に設定
         transformOrigin: "left left",
-        // Animate over 1 second
+        // 1秒かけてアニメーション
         duration: 1,
-        // Use a power2 ease-in-out curve
+        // power2 easingを使用
         ease: "power2.inOut",
-        // Trigger the animation when the card is 80% of the way down the screen
+        // カードが画面の80%の位置に来た時にトリガー
         scrollTrigger: {
-          // The card is the trigger element
           trigger: card,
-          // Trigger the animation when the card is 80% down the screen
           start: "top 80%",
         },
       });
     });
 
-    // Animate the timeline height as the user scrolls
-    // from the top of the timeline to 70% down the screen
-    // The timeline height should scale down from 1 to 0
-    // as the user scrolls up the screen
+    // スクロールに合わせてタイムラインの長さをアニメーションさせる
+    // タイムラインの最上部から画面の70%の位置まで
     gsap.to(".timeline", {
-      // Set the origin of the animation to the bottom of the timeline
+      // 起点をタイムラインの底部に設定
       transformOrigin: "bottom bottom",
-      // Animate the timeline height over 1 second
       ease: "power1.inOut",
-      // Trigger the animation when the timeline is at the top of the screen
-      // and end it when the timeline is at 70% down the screen
+      // タイムラインが画面中央に来た時に開始し、70%の位置で終了
       scrollTrigger: {
         trigger: ".timeline",
         start: "top center",
         end: "70% center",
-        // Update the animation as the user scrolls
+        // スクロールに合わせて更新
         onUpdate: (self) => {
-          // Scale the timeline height as the user scrolls
-          // from 1 to 0 as the user scrolls up the screen
+          // 進捗に合わせてタイムラインをスケールさせる
           gsap.to(".timeline", {
             scaleY: 1 - self.progress,
           });
@@ -62,37 +54,26 @@ const Experience = () => {
       },
     });
 
-    // Loop through each expText element and animate them in
-    // as the user scrolls to each text element
+    // 各 expText 要素をループし、スクロールに合わせて表示させる
     gsap.utils.toArray(".expText").forEach((text) => {
-      // Animate the text opacity from 0 to 1
-      // and move it from the left to its final position
-      // over 1 second with a power2 ease-in-out curve
+      // 不透明度を0から1へ、左から定位置へ移動
       gsap.from(text, {
-        // Set the opacity of the text to 0
         opacity: 0,
-        // Move the text from the left to its final position
-        // (xPercent: 0 means the text is at its final position)
         xPercent: 0,
-        // Animate over 1 second
         duration: 1,
-        // Use a power2 ease-in-out curve
         ease: "power2.inOut",
-        // Trigger the animation when the text is 60% down the screen
         scrollTrigger: {
-          // The text is the trigger element
           trigger: text,
-          // Trigger the animation when the text is 60% down the screen
           start: "top 60%",
         },
       });
-    }, "<"); // position parameter - insert at the start of the animation
+    }, "<");
   }, []);
 
   return (
     <section id="experience" className="flex-center md:mt-40 mt-20 section-padding xl:px-0">
       <div className="w-full h-full md:px-20 px-5">
-        <TitleHeader title="Professional Work Experience" sub="💼 My Career Overview" />
+        <TitleHeader title="職務経歴" sub="💼 キャリアの概要" />
         <div className="mt-32 relative">
           <div className="relative z-50 xl:space-y-32 space-y-10">
             {expCards.map((card) => (
@@ -118,14 +99,14 @@ const Experience = () => {
                         <h1 className="font-semibold text-3xl">{card.title}</h1>
                         <p className="my-5 text-white-50">🗓️&nbsp;{card.date}</p>
                         <p className="my-5 text-[#839CB5] italic">
-                          Project:
+                          プロジェクト:
                           <span className="text-white-50">{card.project}</span>
                         </p>
                         <p className="my-5 text-[#839CB5] italic">
-                          Tech stack:
+                          技術スタック:
                           <span className="text-white-50">{card.techstack}</span>
                         </p>
-                        <p className="text-[#839CB5] italic">Responsibilities:</p>
+                        <p className="text-[#839CB5] italic">主な業務内容:</p>
                         <ul className="list-disc ms-5 mt-5 flex flex-col gap-5 text-white-50">
                           {card.responsibilities.map((responsibility, index) => (
                             <li key={index} className="text-lg">

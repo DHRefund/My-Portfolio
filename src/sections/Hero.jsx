@@ -26,32 +26,34 @@ const Hero = () => {
         <header className="flex flex-col justify-center md:w-full w-screen md:px-20 px-5">
           <div className="flex flex-col gap-7">
             <div className="hero-text">
-              <h1>
-                Shaping
+              <h1 className="flex flex-wrap items-center gap-1">
+                {/* Phần chữ chạy (chỉ chứa icon + word) */}
                 <span className="slide">
                   <span className="wrapper">
                     {words.map((word, index) => (
                       <span key={index} className="flex items-center md:gap-3 gap-1 pb-2">
                         <img
                           src={word.imgPath}
-                          alt="person"
-                          className="xl:size-12 md:size-10 size-7 md:p-2 p-1 rounded-full bg-white-50"
+                          alt="アイコン"
+                          className="xl:size-12 md:size-10 size-7 md:p-2 p-1 rounded-full bg-white-50 flex-shrink-0"
                         />
-                        <span>{word.text}</span>
+                        <span className="whitespace-nowrap">{word.text}</span>
                       </span>
                     ))}
                   </span>
                 </span>
+                {/* Chữ 'を' đứng yên, nằm ngoài slide */}
+                <span className="text-accent static-wo">を</span>
               </h1>
-              <h1>into Real Projects</h1>
-              <h1>that Deliver Results</h1>
+              <h1>実際のプロジェクトへ</h1>
+              <h1>成果として具現化する</h1>
             </div>
 
             <p className="text-white-50 md:text-xl relative z-10 pointer-events-none">
-              Hi, My name is TINH, a developer based in VietNam with a passion for code.
+              こんにちは、TINH です。ベトナムを拠点に、コードへの情熱を持って活動している開発者です。
             </p>
 
-            <Button text="See My Work" className="md:w-80 md:h-16 w-60 h-12" id="counter" />
+            <Button text="作品を見る" className="md:w-80 md:h-16 w-60 h-12" id="counter" />
           </div>
         </header>
 

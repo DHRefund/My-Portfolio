@@ -6,7 +6,7 @@ const Footer = () => {
       {/* <div className="footer-container"> */}
       <div className=" border-2 rounded-3xl">
         <h2 className=" font-bold mb-4 uppercase tracking-wider hero-text text-center ">
-          💻 From Code to Connection: Creating Experiences That Bring People Together 🤝
+          💻 コードからつながりへ：人々を結びつける体験を創造する 🤝
         </h2>
       </div>
     </footer>

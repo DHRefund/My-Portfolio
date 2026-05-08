@@ -36,10 +36,10 @@ const Contact = () => {
 
       // Reset form and stop loading
       setForm({ name: "", email: "", message: "" });
-      setSuccess("Message Sended, Thank a lot!!!");
+      setSuccess("メッセージを送信しました。ありがとうございます！");
     } catch (error) {
       console.error("EmailJS Error:", error); // Optional: show toast
-      setError("Error");
+      setError("エラーが発生しました。");
     } finally {
       setLoading(false); // Always stop loading, even on error
     }
@@ -48,45 +48,45 @@ const Contact = () => {
   return (
     <section id="contact" className="flex-center section-padding">
       <div className="w-full h-full md:px-10 px-5">
-        <TitleHeader title="Get in Touch – Let’s Connect" sub="💬 Have questions or ideas? Let’s talk! 🚀" />
+        <TitleHeader title="お問い合わせ" sub="💬 質問やアイデアはありますか？お気軽にご連絡ください！🚀" />
         <div className="grid-12-cols mt-16">
           <div className="xl:col-span-5">
             <div className="flex-center card-border rounded-xl p-10">
               <form ref={formRef} onSubmit={handleSubmit} className="w-full flex flex-col gap-7">
                 <div>
-                  <label htmlFor="name">Your name</label>
+                  <label htmlFor="name">お名前</label>
                   <input
                     type="text"
                     id="name"
                     name="name"
                     value={form.name}
                     onChange={handleChange}
-                    placeholder="What’s your good name?"
+                    placeholder="お名前を教えてください"
                     required
                   />
                 </div>
 
                 <div>
-                  <label htmlFor="email">Your Email</label>
+                  <label htmlFor="email">メールアドレス</label>
                   <input
                     type="email"
                     id="email"
                     name="email"
                     value={form.email}
                     onChange={handleChange}
-                    placeholder="What’s your email address?"
+                    placeholder="メールアドレスを入力してください"
                     required
                   />
                 </div>
 
                 <div>
-                  <label htmlFor="message">Your Message</label>
+                  <label htmlFor="message">メッセージ</label>
                   <textarea
                     id="message"
                     name="message"
                     value={form.message}
                     onChange={handleChange}
-                    placeholder="How can I help you?"
+                    placeholder="ご用件を入力してください"
                     rows="5"
                     required
                   />
@@ -95,7 +95,7 @@ const Contact = () => {
                 <button type="submit">
                   <div className="cta-button group">
                     <div className="bg-circle" />
-                    <p className="text">{loading ? "Sending..." : "Send Message"}</p>
+                    <p className="text">{loading ? "送信中..." : "メッセージを送信"}</p>
                     <div className="arrow-wrapper">
                       <img src="/images/arrow-down.svg" alt="arrow" />
                     </div>

@@ -9,17 +9,17 @@ gsap.registerPlugin(ScrollTrigger);
 const About = () => {
   useGSAP(() => {
     gsap.fromTo(
-      ".about-text > *", // chọn tất cả phần tử con trực tiếp (h2, p, ...)
+      ".about-text > *", // すべての直系子要素を選択 (h2, p, ...)
       { y: 50, opacity: 0 },
       {
         y: 0,
         opacity: 1,
-        stagger: 0.2, // lần lượt từng dòng
+        stagger: 0.2, // 順番に表示
         duration: 1,
         ease: "power2.out",
         scrollTrigger: {
           trigger: ".about-text",
-          start: "top 80%", // khi phần tử gần vào màn hình
+          start: "top 80%", // 要素が画面に入ったとき
           end: "bottom 60%",
           toggleActions: "play none none reverse",
         },
@@ -30,21 +30,21 @@ const About = () => {
   return (
     <div id="summary" className="min-h-screen w-full">
       <div className="w-full px-15 py-4  rounded-2xl shadow-lg text-white about-text">
-        <h2 className=" font-bold mb-4 uppercase tracking-wider hero-text text-center ">Summary</h2>
+        <h2 className=" font-bold mb-4 uppercase tracking-wider hero-text text-center ">概要</h2>
         <p className=" text-white-50 md:text-xl  mb-20 px-20">
-          I’m a <b>Full Stack Software Engineer</b> with 3 years of experience in Web Development, specializing in
-          ReactJS NextJS for modern front-end web and NodeJS-related technologies.
+          私はWeb開発において4年の経験を持つ<b>フルスタックソフトウェアエンジニア</b>です。
+          モダンなフロントエンド向けのReactJSやNextJS、およびNodeJS関連の技術を専門としています。
           <br />
-          With my knowledge of UI/UX design, I enjoy solving front-end problems and creating the best user experience
-          for users. I also spend time learning new technologies and best practices to become a better engineer.
+          UI/UXデザインの知識を活かし、フロントエンドの課題解決や、ユーザーに最高の体験を提供することに情熱を持っています。
+          また、より優れたエンジニアになるために、常に新しい技術やベストプラクティスの習得に励んでいます。
         </p>
-        <h2 className="hero-text font-bold mb-4 mt-4 uppercase tracking-wider text-center ">Technical Skills</h2>
+        <h2 className="hero-text font-bold mb-4 mt-4 uppercase tracking-wider text-center ">技術スキル</h2>
         <ul className="mb-4 list-disc list-inside space-y-2 text-white-50 md:text-xl px-20 ">
           <li>
-            <b>Programming Languages:</b> JavaScript &amp; TypeScript, Java
+            <b>プログラミング言語:</b> JavaScript &amp; TypeScript, Java
           </li>
           <li>
-            <b>Frameworks/Platforms:</b>
+            <b>フレームワーク / プラットフォーム:</b>
             <ul className="list-disc list-inside ml-6">
               <li>ReactJS, NextJS, ExpressJS, NestJS, Spring Boot</li>
               <li>Vite, Webpack/Babel</li>
@@ -53,23 +53,22 @@ const About = () => {
             </ul>
           </li>
           <li>
-            <b>Database Management Systems:</b> PostgreSQL, MySQL
+            <b>データベース管理システム:</b> PostgreSQL, MySQL
           </li>
           <li>
-            <b>Foreign Languages:</b> TOEIC: 645, JLPT: N2
+            <b>外国語:</b> TOEIC: 645, JLPT: N2
           </li>
           <li>
-            <b>Other:</b>
+            <b>その他:</b>
             <ul className="list-disc list-inside ml-6">
               <li>
-                Understanding of OOP methodologies, SOLID principles, design patterns, DDD (Domain-Driven Design), and
-                Clean Architecture.
+                OOP、SOLID原則、デザインパターン、DDD（ドメイン駆動設計）、クリーンアーキテクチャへの理解。
               </li>
               <li>
-                Knowledge of Cloud Computing Platforms: AWS(EC2,Elastic Beanstalk, Amplify, S3+CloudFront,...),
-                Appwrite, Firebase, Cloudinary, Clerk, ...
+                クラウドコンピューティングプラットフォームの知識：AWS(EC2, Elastic Beanstalk, Amplify, S3+CloudFrontなど),
+                Appwrite, Firebase, Cloudinary, Clerkなど。
               </li>
-              <li>Experience in setting up CI/CD pipelines, using Docker</li>
+              <li>CI/CDパイプラインの構築経験、Dockerの使用経験</li>
             </ul>
           </li>
         </ul>
